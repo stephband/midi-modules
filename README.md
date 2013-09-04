@@ -12,8 +12,8 @@ A module is a constructor. It returns an object representing an instance of a mi
 A node must have EITHER an <code>in</code> method OR an <code>out</code> method OR both.
 
     {
-        in: fn,
-        out: fn
+        in:  function
+        out: function
     }
 
 
