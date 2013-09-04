@@ -55,4 +55,5 @@ It is a subset of the DOM midimessage event.
 This is deliberate, so that midimessage events can be passed directly to MIDI modules.
 The only requirement is that it has some <code>data</code>.
 <code>channel</code> and <code>message</code> are optional, and are a result of processing <code>data</code>.
-Because in effect this is a duplication of data, at the point <code>data</code> is processed it should be made immutable.
+Because in effect this is a duplication of data, at the point <code>data</code> is processed it should be made immutable,
+or at the point where <code>data</code> is changed, <code>channel</code> and <code>message</code> must be deleted or updated..
