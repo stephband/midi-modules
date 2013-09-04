@@ -9,14 +9,12 @@ A module is a constructor. It returns an object representing an instance of a mi
 
     var midiFilter = MIDIFilter(options);
 
-A node may have the following properties:
+A node must have EITHER an <code>in</code> method OR an <code>out</code> method OR both.
 
     {
         in: fn,
         out: fn
     }
-
-It must have EITHER an <code>in</code> method OR an <code>out</code> method OR both.
 
 
 ### node.in
